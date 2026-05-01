@@ -9,6 +9,16 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 :root{--red:#e63232;--dark:#080808;--mid:#111;}
 html{scroll-behavior:smooth;}
+<script src="https://unpkg.com/aos@2.3.1/dist/aps.js"></script>
+<script>
+AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+    mirror: false,
+    offset: 100
+    });
+    </script>
 body{background:var(--dark);color:#fff;font-family:'Barlow Condensed',sans-serif;overflow-x:hidden;}
 .top-bar{background:var(--red);display:flex;align-items:center;justify-content:center;gap:32px;padding:9px 20px;font-size:15px;font-weight:600;letter-spacing:1px;}
 .top-bar a{color:#fff;text-decoration:none;display:flex;align-items:center;gap:7px;}
